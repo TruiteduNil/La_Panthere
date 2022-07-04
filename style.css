@@ -12,7 +12,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+img.img-responsive.portfolio-thumb {
+  width: 100%;
+}
 a,
 button {
   transition: all 0.3s ease-in-out;
@@ -155,7 +157,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-  color: #303030;
+  color: black;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -826,6 +828,22 @@ h4 {
 .tc-grey {
   color: #303030;
 }
+.btn-accueil {
+  padding: 20px 40px 15px;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: #c05535;
+  transition: background-color 200ms ease;
+  font-family: "Versailles lt std 75", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-accueil:hover {
+  opacity: 1;
+  color: black;
+}
 .btn-atomic-tangerine {
   padding: 20px 40px 15px;
   border-radius: 10px;
@@ -886,6 +904,15 @@ h4 {
 }
 .col-sm-12 {
   text-align: center;
+}
+.col-sm-6 {
+  margin-top: 43px;
+}
+.col-sm-6 a {
+  font-size: 18px;
+}
+.col-sm-6 a:hover {
+  text-decoration: underline;
 }
 .focus_only:focus {
   outline: 2px solid #c45824;
