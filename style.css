@@ -25,7 +25,10 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
-
+h2.text-center.hero-bloc-text.tc-white {
+  font-family: Helvetica;
+  margin-top: 15px;
+}
 #page-loading-blocs-notifaction {
   position: fixed;
   top: 0;

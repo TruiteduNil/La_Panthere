@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta
       name="keywords"
-      content="seo, google, site web, site internet, agence design paris, agence design, agence design,agence design,agence design,agence design,agence design,agence design,agence design,agence design"
+      content="Agence la Panthère, site web, site internet, webdesign, visibilité sur le web, Lyon, entreprises locales, expertise web, stratégie web, illustrations, communication, identité visuelle, conseils, Rhône, Rhône-Alpes"
     />
-    <meta name="description" content="" />
+    <meta name="description" content="L'agence de webdesign la Panthère est basée sur Lyon. Elle aide les entreprises à devenir attractives et visibles sur Internet." />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
@@ -42,15 +42,17 @@
       <div class="bloc bgc-white l-bloc" id="bloc-0">
         <div class="container bloc-sm">
           <nav class="navbar row">
-            <div class="navbar-header">
+            <div class="navbar-header" role="banner">
               <a class="navbar-brand" href="index.html"
                 ><img
+                  role="img"
+                  aria-label="Logo la Panthère"
                   src="img/logo.png"
                   alt="La Panthère Agence web design"
               /></a>
               <div class="navbar_title">
-              <h1>La Panthère</h1>
-              <h2>AGENCE WEB DESIGN</h2>
+              <h1 role="heading" aria-level="1">La Panthère</h1>
+              <h2 role="heading" aria-level="2">AGENCE WEB DESIGN</h2>
               </div>
               <button
                 id="nav-toggle"
@@ -65,12 +67,12 @@
               </button>
             </div>
             <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-              <ul class="site-navigation nav navbar-nav">
+              <ul class="site-navigation nav navbar-nav" role="navigation">
                 <li>
                   <a href="index.html">Accueil</a>
                 </li>
                 <li>
-                  <a href="page2.html">Contact</a>
+                  <a href="contact.html">Contact</a>
                 </li>
               </ul>
             </div>
@@ -82,7 +84,7 @@
       <!-- bloc-1-presentation -->
       <div
         class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax"
-        id="bloc-1-hero"
+        role="aside" id="bloc-1-hero"
       >
         <div class="container bloc-lg">
           <div class="row tight-width-whitespace">
@@ -90,16 +92,19 @@
               <img
                 src="img/logo.png"
                 class="center-block image-resize-mode"
+                role="img"
+                aria-label="Logo la Panthère"
                 width="100"
                 alt="Agence La Panthère, agence web paris, création logo paris"
               />
-              <h2 class="text-center hero-bloc-text tc-white">
+              <h2 role="heading" aria-level="2"class="text-center hero-bloc-text tc-white">
                 Agence La Panthère
               </h2>
               <div class="text-center">
                 <a
-                  href="page2.html"
+                  href="contact.html"
                   class="btn btn-lg btn-clean btn-rd cta-hero btn-accueil"
+                  role="link"
                   id="cta-hero"
                   >Contact</a
                 >
@@ -111,7 +116,7 @@
       <!-- bloc-1-presentation END -->
 
       <!-- bloc-2-services -->
-      <div class="bloc bgc-white l-bloc" id="bloc-2-services">
+      <article class="bloc bgc-white l-bloc" id="bloc-2-services" role="article">
         <div class="container bloc-md">
           <div class="row">
             <div class="first_quote">
@@ -122,10 +127,10 @@
             <div class="col-sm-4">
               <div class="text-center">
                 <span
-                  class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"
+                  class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg" role="presentation"
                 ></span>
               </div>
-              <h3 class="mg-md text-center">Web design</h3>
+              <h3 class="mg-md text-center" role="heading" aria-level="3">Web design</h3>
               <p class="text-center">
                 Que vous ayez un site web qui a besoin d&rsquo;un
                 rafraîchissement ou que vous partiez de zéro, laissez-nous vous
@@ -135,10 +140,10 @@
             <div class="col-sm-4">
               <div class="text-center">
                 <span
-                  class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"
+                  class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg" role="presentation"
                 ></span>
               </div>
-              <h3 class="mg-md text-center">&nbsp;Stratégie</h3>
+              <h3 class="mg-md text-center" role="heading" aria-level="3">&nbsp;Stratégie</h3>
               <p class="text-center">
                 Plutôt que de suggérer des designs à la mode, nous travaillerons
                 avec vous pour comprendre vos objectifs commerciaux afin de vous
@@ -148,10 +153,10 @@
             <div class="col-sm-4">
               <div class="text-center">
                 <span
-                  class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"
+                  class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg" role="presentation"
                 ></span>
               </div>
-              <h3 class="mg-md text-center">Illustrations</h3>
+              <h3 class="mg-md text-center" role="heading" aria-level="3">Illustrations</h3>
               <p class="text-center">
                 Un bon design n'est rien sans de bonnes illustrations. Laissez
                 faire notre équipe de graphistes talentueux pour donner à vos
@@ -160,7 +165,7 @@
             </div>
           </div>
           <div class="row voffset-lg voffset">
-            <div class="second_quote">
+            <div class="second_quote" role="figure">
               <p>
                 "L'agence La Panthère est une excellente ! Les web designer ont
                 réussi à capturer l'essence de notre entreprise et à l'intéger à
@@ -168,18 +173,18 @@
                 Lyon."
               </p>
             </div>
-            <div class="name_quote">
+            <div class="name_quote" role="note">
               <p>Maxime Guibard, PDG de À vos fourchettes</p>
             </div>
           </div>
         </div>
-      </div>
+      </article>
       <!-- bloc-2-services END -->
 
       <!-- bloc-3-what-i-do -->
       <div
         class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax"
-        id="bloc-3-what-i-do"
+        role="complementary" id="bloc-3-what-i-do"
       >
         <div class="container bloc-lg">
           <div class="row tight-width-whitespace black-background">
@@ -197,7 +202,7 @@
                 votre site, n’hésitez pas à nous contacter. Nous travaillerons
                 ensemble pour créer des sites beau et bien structurés, qui
                 seront facilement trouvable sur les moteurs de recherche.
-                <br /><br /><a class="ltc-white bold-link" href="page2.html"
+                <br /><br /><a class="ltc-white bold-link" role="link" href="contact.html"
                   >Contactez notre équipe</a
                 ><br />
               </p>
@@ -208,7 +213,7 @@
       <!-- bloc-3-what-i-do END -->
 
       <!-- bloc-4-portfolio -->
-        <div class="container bloc-lg">
+        <article class="container bloc-lg" role="article">
           <div class="row">
             <div class="col-sm-12 text-center">
               <p>Nous travaillons aussi avec beaucoup de clients, voici nos réalisations.</p>
@@ -224,10 +229,12 @@
                 data-frame="snapshot-lb"
                 ><img
                   src="img/1.jpg"
-                  alt="paris web design logo agence web meilleure agence et refonte site web journal"
+                  role="img"
+                  aria-label="Magazines"
+                  alt="Magazines"
                   class="img-responsive portfolio-thumb"
               /></a>
-              <h3 class="mg-md text-center">
+              <h3 class="mg-md text-center" role="heading" aria-level="3">
                 Refonte d'un site web pour un journal local
               </h3>
               <p class="text-center">
@@ -244,10 +251,12 @@
                 data-frame="snapshot-lb"
                 ><img
                   src="img/2.jpg"
+                  role="img"
+                  aria-label="Photographe"
                   class="img-responsive portfolio-thumb"
-                  alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes"
+                  alt="Photographe"
               /></a>
-              <h3 class="mg-md text-center">
+              <h3 class="mg-md text-center" role="heading" aria-level="3">
                 Création d'un site web pour photographes
               </h3>
               <p class="text-center">
@@ -260,16 +269,18 @@
             <div class="col-sm-6">
               <a
                 href="#"
-                data-lightbox="img/3.bmp"
+                data-lightbox="img/3.jpg"
                 data-gallery-id="gallery-1"
                 data-caption="Création d'un site internet pour un voyageur"
                 data-frame="snapshot-lb"
                 ><img
-                  src="img/3.bmp"
+                  src="img/3.jpg"
+                  role="img"
+                  aria-label="Matériel_audiovisuel"
                   class="img-responsive portfolio-thumb"
-                  alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"
+                  alt="Matériel audiovisuel"
               /></a>
-              <h3 class="mg-md text-center">
+              <h3 class="mg-md text-center" role="heading" aria-level="3">
                 Création d'un site internet pour un voyageur
               </h3>
               <p class="text-center">
@@ -280,16 +291,18 @@
             <div class="col-sm-6">
               <a
                 href="#"
-                data-lightbox="img/4.bmp"
+                data-lightbox="img/4.jpg"
                 data-gallery-id="gallery-1"
                 data-caption="Conception d'un site pour une agence de mariage"
                 data-frame="snapshot-lb"
                 ><img
-                  src="img/4.bmp"
+                  src="img/4.jpg"
+                  role="img"
+                  aria-label="Bureau"
                   class="img-responsive portfolio-thumb"
-                  alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage"
+                  alt="Bureau avec un ordinateur"
               /></a>
-              <h3 class="mg-md text-center">
+              <h3 class="mg-md text-center" role="heading" aria-level="3">
                 Conception d'un site pour une agence de mariage
               </h3>
               <p class="text-center">
@@ -300,7 +313,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
       <!-- bloc-4-portfolio END -->
 
       <!-- bloc-5-cta -->
@@ -310,14 +323,15 @@
       >
         <div class="container bloc-lg">
           <div class="row">
-            <h4 class="mg-md text-center tc-white">
+            <h4 class="mg-md text-center tc-white" role="heading" aria-level="4">
               Prêt pour redonner vie à votre projet ?<br />Contactez notre
               équipe !
             </h4>
             <div class="col-sm-12 text-center">
               <a
-                href="page2.html"
+                href="contact.html"
                 class="btn btn-accueil btn-clean btn-rd btn-lg cta-hero"
+                role="link"
                 >Contact</a
               >
             </div>
@@ -327,39 +341,43 @@
       <!-- bloc-5-cta END -->
 
       <!-- Footer - bloc-8 -->
-      <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+      <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
         <div class="container bloc-sm">
           <div class="row">
             <div class="col-sm-12">
-              <h4 class="text-center white">
+              <h4 class="text-center white" role="heading" aria-level="4">
                 Agence La Panthère - Agence web basée à Lyon.<br />
               </h4>
               <div class="row row-no-gutters social">
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-twitter icon-md"></span
+                    <a class="social" role="link" href="http://www.twitter.com/"
+                    title="Twitter"
+                      ><span class="fa fa-twitter icon-md" role="presentation"></span
                     ></a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-facebook icon-md"></span
+                    <a class="social" role="link" href="http://www.facebook.com/"
+                    title="Facebook"
+                      ><span class="fa fa-facebook icon-md" role="presentation"></span
                     ></a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-dribbble icon-md"></span
+                    <a class="social" role="link" href="https://dribbble.com/"
+                    title="Dribbble"
+                      ><span class="fa fa-dribbble icon-md" role="presentation"></span
                     ></a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-instagram icon-md"></span
+                    <a class="social" role="link" href="http://www.instagram.com/"
+                    title="Instagram"
+                      ><span class="fa fa-instagram icon-md" role="presentation"></span
                     ></a>
                   </div>
                 </div>
@@ -367,7 +385,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </footer>
       <!-- Footer - bloc-8 END -->
     </div>
     <!-- Principal conteneur END -->
