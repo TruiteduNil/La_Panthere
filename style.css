@@ -1,6 +1,9 @@
 .navbar-header {
   display: flex;
 }
+.navbar-link-heading {
+  cursor: pointer;
+}
 li {
   list-style-type: none;
 }
@@ -848,6 +851,7 @@ h4 {
   color: black;
 }
 .btn-atomic-tangerine {
+  width: auto;
   padding: 20px 40px 15px;
   border-radius: 10px;
   border-color: transparent;
@@ -964,6 +968,9 @@ select {
 .form-group span {
   margin-top: 7px;
   font-family: "helvetica";
+}
+.form-group {
+  margin-bottom: -13px !important;
 }
 @media (max-width: 1024px) {
   .bloc {
@@ -1099,7 +1106,7 @@ select {
     box-shadow: none;
   }
   .navbar-brand img {
-    max-height: 40px;
+    max-height: 72px;
     width: auto;
   }
   .nav-invert .navbar-header {
@@ -1166,11 +1173,33 @@ select {
   .form_content {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 65%;
     margin: 0 auto;
   }
   .form_content .form_right {
     margin-left: 5px;
+  }
+  .bloc-mob-center-text {
+    text-align: center;
+  }
+  .btn-atomic-tangerine {
+    margin: auto;
+  }
+  .col-sm-6 a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .navbar-toggle {
+    margin-left: auto;
+  }
+  h3.text-center.hero-bloc-text.tc-white {
+    font-size: 33px;
+  }
+  p.text-center.mg-lg.tc-white.tight-width-whitespace {
+    font-size: 17px;
+  }
+  .message textarea {
+    width: 100%;
   }
 }
 
@@ -1178,12 +1207,6 @@ select {
   .bloc {
     padding-left: 0;
     padding-right: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .bloc-mob-center-text {
-    text-align: center;
   }
 }
 @media (min-width: 768px) {
