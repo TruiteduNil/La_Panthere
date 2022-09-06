@@ -290,12 +290,6 @@ h2.text-center.hero-bloc-text.tc-white {
   margin-left: 0;
 }
 
-.row.row-no-gutters > [class^="col-"],
-.row.row-no-gutters > [class*=" col-"] {
-  padding-right: 0;
-  padding-left: 0;
-}
-
 #bloc-1-hero h1 {
   font-size: 32px;
 }
@@ -531,6 +525,9 @@ button {
   box-shadow: none;
   display: block;
 }
+.form_left {
+  width: 33%;
+}
 .big {
   width: 50%;
 }
@@ -678,6 +675,7 @@ a {
   font-weight: 400;
   color: #575757 !important;
   text-decoration: none;
+  font-size: 18px;
 }
 
 /*.container {
@@ -724,7 +722,7 @@ p {
   max-width: 400px;
   margin: auto auto auto auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 h2 {
@@ -930,6 +928,7 @@ h4 {
 }
 .form_right {
   margin-left: 36px;
+  width: 50%;
 }
 .form-group {
   position: relative;
@@ -950,13 +949,13 @@ h4 {
   width: 94%;
   resize: none;
 }
-.red-o {
+  .red-o {
   border-color: red;
 }
 .form-group i {
   position: absolute;
   left: 0;
-  top: 25px;
+  top: 35px;
   padding: 11px 8px;
 }
 select {
@@ -970,7 +969,7 @@ select {
   font-family: "helvetica";
 }
 .form-group {
-  margin-bottom: -13px !important;
+  margin-bottom: 10px !important;
 }
 @media (max-width: 1024px) {
   .bloc {
@@ -1213,5 +1212,8 @@ select {
   .container.bloc-lg {
     padding-left: 20px !important;
     padding-right: 20px !important;
+  }
+  .form_left {
+    width: 50% !important;
   }
 }

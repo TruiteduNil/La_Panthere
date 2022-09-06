@@ -147,7 +147,6 @@
                         class="form-control focus_only"
                         required
                       />
-                      <span id="name_missing"></span><br />
                       <i class="fa-solid fa-user"></i>
                     </div>
                     <div class="form-group">
@@ -161,7 +160,6 @@
                         placeholder="nom.prenom@email.com"
                       />
                       <i class="fa-solid fa-envelope"></i>
-                      <span id="email_missing"></span><br />
                     </div>
                     <div class="form-group">
                       <label for="com_quest_select">
@@ -193,7 +191,6 @@
                         </option>
                         <option value="Autres" role="option">Autres</option>
                       </select>
-                      <span id="select_missing"></span><br />
                     </div>
                   </div>
                   <div class="form_right">
@@ -211,7 +208,6 @@
                         required
                         placeholder="Veuillez saisir votre message..."
                       ></textarea>
-                      <span id="message_missing"></span><br />
                     </div>
                   </div>
                 </div>
@@ -305,74 +301,5 @@
       <!-- Footer - bloc-8 END -->
     </div>
     <!-- Principal conteneur END -->
-    <script>
-      var validation = document.getElementById("bouton_envoi");
-
-      var nom = document.getElementById("name");
-      var name_m = document.getElementById("name_missing");
-      var name_v =
-        /^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?/;
-
-      validation.addEventListener("click", f_valid);
-
-      var email = document.getElementById("email");
-      var email_m = document.getElementById("email_missing");
-      var email_v = /^(.+)@(.+)\.(.+)$/;
-
-      var message = document.getElementById("message");
-      var message_m = document.getElementById("message_missing");
-
-      var select = document.getElementById("com_quest_select");
-      var select_m = document.getElementById("select_missing");
-
-      function f_valid(e) {
-        e.preventDefault();
-        var is_valid = false;
-        console.log(select.value);
-        if (select.value !== "0") {
-          is_valid = true;
-        } else {
-          is_valid === false;
-          select_m.textContent = "Veuillez sélectionner une option !";
-          select_m.style.color = "#B32F07";
-          select.style.borderColor = "#B32F07";
-        }
-
-        if (message.value.lenght > 5 && message.value.lenght < 250) {
-          is_valid = true;
-        } else {
-          is_valid === false;
-          message_m.textContent = "Veuillez décrire votre projet !";
-          message_m.style.color = "#B32F07";
-          message.style.borderColor = "#B32F07";
-        }
-
-        if (nom.validity.valueMissing) {
-          name_m.textContent = "Nom manquant !";
-          name_m.style.color = "#B32F07";
-          nom.style.borderColor = "#B32F07";
-        } else if (name_v.test(nom.value) == false) {
-          name_m.textContent = "Format incorrect !";
-          name_m.style.color = "#B32F07";
-          nom.style.borderColor = "#B32F07";
-        } else {
-          var is_valid = true;
-        }
-        if (email.validity.valueMissing) {
-          is_valid === false;
-          email_m.textContent = "Email incorrect !";
-          email_m.style.color = "#B32F07";
-          email.style.borderColor = "#B32F07";
-        } else if (email_v.test(email.value) == false) {
-          is_valid === false;
-          email_m.textContent = "Format incorrect !";
-          email_m.style.color = "#B32F07";
-          email.style.borderColor = "#B32F07";
-        }
-        // if (is_valid) {
-        //   alert("Email envoyé avec succès !");
-        // }
-      }
-    </script>
   </body>
 </html>
